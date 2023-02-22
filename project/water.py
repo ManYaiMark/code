@@ -14,7 +14,7 @@ def water():
         f"""
                <style>
                .stApp {{
-                   background-image: url("http://m.gettywallpapers.com/wp-content/uploads/2021/12/Desktop-Wallpaper-2022.jpg");
+                   background-image: url("https://imgix.ranker.com/user_node_img/4374/87466983/original/anya-forger-u218362898?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=650");
                    background-attachment: fixed;
                    background-size: cover;
                    /* opacity: 0.3; */
