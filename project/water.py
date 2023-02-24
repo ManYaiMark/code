@@ -22,7 +22,6 @@ def water():
                """,
         unsafe_allow_html=True
     )
-    st.title("water potability")
     left,right = st.columns(2)
     def save_model(model):
         joblib.dump(model, './project/water_drop.joblib')
