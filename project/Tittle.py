@@ -1,5 +1,5 @@
-# import water as wt
-# import ussi_project as up
+import water as wt
+import ussi_project as up
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
