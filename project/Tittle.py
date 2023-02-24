@@ -53,7 +53,7 @@ if select_box == 'intro':
         test_score[i] = knn.score(x_test, y_test)
 
 if select_box == "water potability":
-    st.title("# Water Potability💧")
+    st.title(" Water Potability💧")
     wt.water()
 if select_box == "Prediction Prediction":
     st.title(select_box)
