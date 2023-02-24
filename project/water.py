@@ -14,7 +14,7 @@ def water():
         f"""
                <style>
                .stApp {{
-                   background-image: url("https://imgix.ranker.com/user_node_img/4374/87466983/original/anya-forger-u218362898?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=650");
+                   background-image: url("http://m.gettywallpapers.com/wp-content/uploads/2021/12/Desktop-Wallpaper-2022.jpg");
                    background-attachment: fixed;
                    background-size: cover;
                    /* opacity: 0.3; */
@@ -44,12 +44,7 @@ def water():
         x=np.asarray(x).astype(np.float16)
         y=load_data["Potability"]
         y=np.asarray(y).astype(np.float32)
-        # load_data = pd.DataFrame({
-        #     'x':x,
-        #     'y':y
-        # })
-        # load_data.plot.scatter(x=x,y=y,ax=ax)
-        #
+
         x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4)
 
         k_neighbors = np.arange(1, 51)
@@ -62,25 +57,7 @@ def water():
             train_score[i] = knn.score(x_train, y_train)
             test_score[i] = knn.score(x_test, y_test)
             # print(test_score[i] * 100)
-
-#         plt.title("Comare k value in model")
-#         plt.plot(k_neighbors, test_score, 'ro', label="Test score")
-#         plt.plot(k_neighbors, train_score, 'bo', label="Train score")
-#         plt.legend()
-#         plt.xlabel("K number")
-#         plt.ylabel("Score")
-        # fig, ax = plt.subplots()
-        # x=plt.plot(k_neighbors, test_score, 'ro', label="Test score")
-        # y=plt.plot(k_neighbors, train_score, 'bo', label="Train score")
-        # x_arr = np.asarray(k_neighbors)
-        # y_arr = np.asarray(test_score)
-        # df = pd.DataFrame({
-        #     "x": x_arr,
-        #     "y": y_arr
-        # })
-        # df.plot.scatter(x="x", y="y", ax=ax)
-        # st.pyplot(fig)
-        plt.title("Comparison of test score and train score with different k values")
+        plt.title("Comare k value in model")
         plt.plot(k_neighbors, test_score, 'ro', label="Test score")
         plt.plot(k_neighbors, train_score, 'bo', label="Train score")
         plt.legend()
@@ -103,23 +80,23 @@ def water():
         save_model(model)
 
     ph=st.number_input("Input PH",min_value=0.2274,max_value=14.0000,step=.0001)
-    st.markdown("min=0.2274  max=14.0000")
+    st.markdown("**0.2274  ➡️  14.0000**")
     Hardness=st.number_input("Input Hardness",min_value=73.4922,max_value=317.3381,step=.0001)
-    st.markdown("min=73.4922  max=317.3381")
+    st.markdown("**73.4922  ➡️  317.3381**")
     Solids=st.number_input("Input Solids",min_value=320.9426,max_value=56488.6724,step=.0001)
-    st.markdown("min=320.9426  max=56488.6724")
+    st.markdown("**320.9426  ➡️  56488.6724**")
     Chloramines=st.number_input("Input Chloramines",min_value=1.39087,max_value=13.1270,step=.0001)
-    st.markdown("min=1.39087  max=13.1270")
+    st.markdown("**1.39087  ➡️  13.1270**")
     Sulfate=st.number_input("Input Sulfate",min_value=129.0000,max_value=481.0306,step=.0001)
-    st.markdown("min=129.0000  max=481.0306")
+    st.markdown("**129.0000  ➡️  481.0306**")
     Conductivity=st.number_input("Input Conductivity",min_value=201.6197,max_value=753.3426,step=.0001)
-    st.markdown("min=201.6197  max=753.3426")
+    st.markdown("**201.6197  ➡️  753.3426**")
     Organic_carbon=st.number_input("Input Organic_carbon",max_value=27.0067,min_value=2.2000,step=.0001)
-    st.markdown("min=2.2000  max=27.0067")
+    st.markdown("**2.2000  ➡️  27.0067**")
     Trihalomethanes=st.number_input("Input Trihalomethanes",min_value=8.5770,max_value=124.0000,step=.0001)
-    st.markdown("min= 8.5770  max=124.0000")
+    st.markdown(" **8.5770  ➡️  124.0000**")
     Turbidity=st.number_input("Input Turbidity",max_value=6.4947,min_value=1.4500,step=.0001)
-    st.markdown("min=1.4500  max=6.4947")
+    st.markdown("**1.4500  ➡️  6.4947**")
 
     def pdict():
         model = load_model()
@@ -139,8 +116,4 @@ def water():
         pdict()
     if st.button("ประเมิณคุณภาพน้ำ "):
         pdict()
-
-
-
-
 
