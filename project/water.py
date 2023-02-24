@@ -7,7 +7,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 import time as t
 import random as rd
-#http://m.gettywallpapers.com/wp-content/uploads/2021/12/Desktop-Wallpapers.jpg
 st.set_option('deprecation.showPyplotGlobalUse', False)
 def water():
     st.markdown(
