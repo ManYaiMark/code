@@ -43,7 +43,7 @@ if select_box == 'intro':
     plt.ylabel("Score")
     plt.show()
 if select_box == "water potability":
-    st.title(select_box)
+#     st.title("# Water Potability💧")
     wt.water()
 if select_box == "Prediction Prediction" :
     st.title(select_box)
