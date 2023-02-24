@@ -14,7 +14,7 @@ with st.spinner("loading...."):
 st.sidebar.title("Menu")
 select_box = st.sidebar.selectbox("Where are you going :",('intro', "water potability", "Prediction Prediction", "about web"))
 if select_box == 'intro':
-        st.markdown(
+    st.markdown(
             f"""
                    <style>
                    .stApp {{
