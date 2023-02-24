@@ -14,7 +14,7 @@ def water():
         f"""
                <style>
                .stApp {{
-                   background-image: url("http://m.gettywallpapers.com/wp-content/uploads/2021/12/Desktop-Wallpaper-2022.jpg");
+                   background-image: url("https://cdn.oneesports.gg/cdn-data/2021/12/Anime_SpyxFamily_Anya-1-1024x576.jpg");
                    background-attachment: fixed;
                    background-size: cover;
                    /* opacity: 0.3; */
