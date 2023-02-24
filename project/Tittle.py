@@ -33,8 +33,8 @@ if select_box == 'intro':
         knn.fit(x_train, y_train)
         train_score[i] = knn.score(x_train, y_train)
         test_score[i] = knn.score(x_test, y_test)
-        print(test_score[i] * 100)
-
+        
+        
     plt.title("Comare k value in model")
     plt.plot(k_neighbors, test_score, 'ro', label="Test score")
     plt.plot(k_neighbors, train_score, 'bo', label="Train score")
