@@ -56,7 +56,6 @@ if select_box == "water potability":
     st.title(" Water Potability💧")
     wt.water()
 if select_box == "Prediction Prediction":
-    st.title(select_box)
     up.population()
 if select_box == "about web":
     st.title(select_box)
